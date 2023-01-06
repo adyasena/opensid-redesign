@@ -1,7 +1,7 @@
 <?php  defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
 <div 
-  x-data="{loading: true, onLoading() {setTimeout(() => {this.loading = false}, 1500)}}"
+  x-data="{loading: true, onLoading() {setTimeout(() => {this.loading = false}, 200)}}"
   x-init="onLoading()">
   <div
     class="fixed bg-white left-0 top-0 w-screen h-screen z-[9999] flex justify-center items-center"
