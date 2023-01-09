@@ -2,7 +2,7 @@
 
 <?php $bg_header = $latar_website ? base_url($latar_website) : base_url($this->theme_folder.'/'.$this->theme .'/assets/images/header-bg.jpg') ?>
 
-<div class="container md:px-4 lg:px-5">
+<div class="" style="position:relative;">
   <header style="background-image: url(<?= $bg_header ?>);" class="bg-center bg-cover bg-no-repeat relative text-white">
     <div class="absolute bg-gray-800 bg-opacity-60 top-0 left-0 right-0 h-full">
     </div>
@@ -52,7 +52,7 @@
         </marquee>
       </div>
     <?php endif ?>
-  </header>
+  </header>        
   <?php $this->load->view($folder_themes .'/commons/main_menu') ?>
   <?php $this->load->view($folder_themes .'/commons/mobile_menu') ?>
 </div>
