@@ -52,7 +52,9 @@
         </marquee>
       </div>
     <?php endif ?>
-  </header>        
+  </header>
+</div>
+<div class="sticky-top"> 
   <?php $this->load->view($folder_themes .'/commons/main_menu') ?>
   <?php $this->load->view($folder_themes .'/commons/mobile_menu') ?>
 </div>
