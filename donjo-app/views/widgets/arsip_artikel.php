@@ -9,7 +9,7 @@
 	<div class="box-header">
 		<h3 class="box-title"><a href="<?= site_url('arsip')?>"><i class="fa fa-archive"></i> Arsip Artikel</a></h3>
 	</div>
-	<div id="arsip_artikel" class="box-body">
+	<div id="arsip_artikel" class="box-body" style="">
 		<ul class="nav nav-tabs">
 			<li class="active"><a data-toggle="tab" href="#terkini">Terkini</a></li>
 			<li><a data-toggle="tab" href="#populer">Populer</a></li>
