@@ -45,3 +45,6 @@
     <?php $this->load->view($folder_themes .'/partials/sidebar') ?>
   </div>
 </div>
+<div>
+<?php $this->load->view($folder_themes .'/partials/sidebar_bottom') ?>
+</div>
