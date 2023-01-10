@@ -7,18 +7,20 @@
   gambar_desa($desa['logo']);
 ?>
 
-<div class="max-w-full w-full p-3 lg:p-5 overflow-auto">
-  <figure class="h-auto lg:h-32 w-1/3 float-left pr-3 pb-3 <?php $image === gambar_desa($desa['logo']) and print('lg:h-auto') ?>">
-    <img src="<?= $image ?>" alt="<?= $post['judul'] ?>" class="<?php $image !== gambar_desa($desa['logo']) and print('lg:h-32 w-full object-cover object-center') ?> max-w-full mx-auto h-auto">
+<div class="max-w-full w-full pb-4 overflow-auto">
+  <figure class="h-32 lg:h-40 w-1/2 lg:w-1/3 float-left pr-3 <?php $image === gambar_desa($desa['logo']) and print('h-auto') ?>">
+    <div style="background-image: url('<?= $image ?>'); position: relative; background-size: 100%; background-position: center; background-repeat: no-repeat; height: 100%; top: 0px;" 
+      alt="<?= $post['judul'] ?>" class="<?php $image !== gambar_desa($desa['logo']) and print('w-full object-cover object-center') ?> max-w-full mx-auto h-auto">
+      <div class="text-xs lg:text-sm text-white p-2" style="background-color:#8a0090; position: absolute; opacity: 0.85; bottom:0; left:0;">
+      <?= tgl_indo($post['tgl_upload']) ?> </div>
+    </div>
   </figure>
-  <div class="space-y-3">
-    <a href="<?= $url ?>" class="text-h5 hover:text-primary-100"><?= $post['judul'] ?></a>
-    <p class="line-clamp-4"><?= $abstract ?></p>
-    <ul class="inline-flex gap-x-5 gap-y-3 text-xs lg:text-sm text-gray-500 flex-wrap">
-      <li><i class="fas fa-calendar-alt mr-1 text-primary-100"></i> <?= tgl_indo($post['tgl_upload']) ?></li>
-      <?php if($post['kategori']) : ?>
-        <li><i class="fas fa-bookmark mr-1 text-primary-100"></i> <?= $post['kategori'] ?></li>
-      <?php endif ?>
-    </ul>
+  <div class="mb-9">
+    <a href="<?= $url ?>" class="text-h5 text-primary-200 hover:text-primary-100 my-2"><?= $post['judul'] ?></a>
+    <p class="line-clamp-4" style="margin-bottom: 4px;"><?= $abstract ?></p>
+    <a href="<?= $url ?>" class="text-sm text-primary-200 hover:text-primary-100">
+      Lihat Selengkapnya
+      <i class="fas fa-chevron-right ml-1"></i>
+    </a>
   </div>
 </div>

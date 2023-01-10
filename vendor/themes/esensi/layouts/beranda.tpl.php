@@ -18,7 +18,7 @@
     <!-- Judul Kategori / Artikel Terkini -->
     <div class="flex justify-between items-center w-full">
       <h3 class="text-h4 text-primary-200"><?= $title ?></h3>
-      <a href="<?= site_url('arsip') ?>" class="text-sm hover:text-primary-100">Indeks <i class="fas fa-chevron-right ml-1"></i></a>
+      <a href="<?= site_url('arsip') ?>" class="text-sm text-primary-200 hover:text-primary-100">Indeks <i class="fas fa-chevron-right ml-1"></i></a>
     </div>
 
     <?php if(empty($cari AND count($slider_gambar) > 0) AND $this->uri->segment(2) != 'kategori' AND ($this->uri->segment(2) !== 'index' AND $this->uri->segment(1) !== 'index')) : ?>

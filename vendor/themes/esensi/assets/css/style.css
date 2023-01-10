@@ -4533,6 +4533,9 @@ article .box>div:nth-child(2) .table-responsive table, article .box>div:nth-chil
 .h-0 {
   height: 0px;
 }
+.h-32 {
+  height: 8rem;
+}
 .h-auto {
   height: auto;
 }
