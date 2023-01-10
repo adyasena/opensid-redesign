@@ -7251,6 +7251,9 @@ article .box>div:nth-child(2) .table-responsive table, article .box>div:nth-chil
   .lg\:w-7\/12 {
     width: 58.333333%;
   }
+  .lg\:w-40 {
+    width: 3rem;
+  }
   .lg\:w-12 {
     width: 3rem;
   }
