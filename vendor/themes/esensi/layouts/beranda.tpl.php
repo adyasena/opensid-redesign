@@ -8,7 +8,7 @@
     $title = $title['kategori'];
   }
 ?>
-<div class="container mx-auto lg:px-5 px-3 flex flex-col lg:flex-row my-5 gap-3 lg:gap-5 justify-between text-gray-600">
+<div class="container mx-auto flex flex-col lg:flex-row my-5 px-4 gap-3 lg:gap-5 justify-between text-gray-600">
   <main class="lg:w-2/3 w-full overflow-hidden space-y-5">
     <!-- Tampilkan slider hanya di halaman awal. Tidak tampil pada daftar artikel di halaman kategori atau halaman selanjutnya serta halaman hasil pencarian -->
     <?php if(empty($cari AND count($slider_gambar) > 0) AND $this->uri->segment(2) != 'kategori' AND ($this->uri->segment(2) !== 'index' AND $this->uri->segment(1) !== 'index')) : ?>
@@ -18,7 +18,7 @@
     <!-- Judul Kategori / Artikel Terkini -->
     <div class="flex justify-between items-center w-full">
       <h3 class="text-h4 text-primary-200"><?= $title ?></h3>
-      <a href="<?= site_url('arsip') ?>" class="text-sm text-primary-200 hover:text-primary-100">Indeks <i class="fas fa-chevron-right ml-1"></i></a>
+      <a href="<?= site_url('arsip') ?>" class="text-md text-primary-200 hover:text-primary-100">Indeks <i class="fas fa-chevron-right ml-1"></i></a>
     </div>
 
     <?php if(empty($cari AND count($slider_gambar) > 0) AND $this->uri->segment(2) != 'kategori' AND ($this->uri->segment(2) !== 'index' AND $this->uri->segment(1) !== 'index')) : ?>
