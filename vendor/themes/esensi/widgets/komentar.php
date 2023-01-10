@@ -1,11 +1,11 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
-<div class="box box-primary box-solid">
+<div class="box box-primary box-solid" style="height:100%">
   <div class="box-header">
     <h3 class="box-title"><i class="fa fa-comments mr-2 mr-1"></i><?= $judul_widget ?></h3>
   </div>
-  <div class="box-body">
-    <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2" direction="up" width="100%" height="150" align="center">
+  <div class="box-body" style="height:100%">
+    <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2" direction="up" width="100%" height="100%" align="center">
       <ul class="divide-y">
         <?php foreach($komen As $data): ?>
         <li class="py-2 space-y-2">
