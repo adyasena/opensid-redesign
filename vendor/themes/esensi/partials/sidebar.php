@@ -7,18 +7,18 @@
   </form>
   <?php if ($w_cos): ?>
     <?php foreach($w_cos as $widget) : ?>
+      <?php if ($widget['isi'] == "menu_kategori.php" || $widget["isi"] == "agenda.php" || $widget["isi"] == "statistik.php" || $widget["isi"] == "sinergi_program.php" || 
+        $widget["isi"] == "galeri.php" || $widget["isi"] == "aparatur_desa.php" || $widget["isi"] == "peta_wilayah_desa.php" || $widget["isi"] == "peta_lokasi_kantor.php" || 
+        $widget["isi"] == "keuangan.php"): ?>
       <?php
         $judul_widget = [
           'judul_widget' => str_replace('Desa', ucwords($this->setting->sebutan_desa), strip_tags($widget['judul']))
         ];
       ?>
       <div class="shadow rounded-lg bg-white overflow-hidden" >
-      <?php if ($widget['isi'] == "menu_kategori.php" || $widget["isi"] == "agenda.php" || $widget["isi"] == "statistik.php" || $widget["isi"] == "sinergi_program.php" || $widget["isi"] == "galeri.php" || $widget["isi"] == "aparatur_desa.php" || $widget["isi"] == "peta_wilayah_desa.php" || $widget["isi"] == "peta_lokasi_kantor.php" || $widget["isi"] == "keuangan.php"): ?>
         <?php $this->load->view("{$folder_themes}/widgets/{$widget['isi']}", $judul_widget) ?>
-      <?php endif ?>
       </div>
+      <?php endif ?>
     <?php endforeach ?>
   <?php endif ?>
 </aside>
-
-
