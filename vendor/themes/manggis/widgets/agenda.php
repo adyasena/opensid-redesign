@@ -14,98 +14,110 @@
       <?php endif; ?>
 
       <?php if (count($yad) >= 0): ?>
-      <li class="nav-item flex-grow text-center" role="presentation"><a href="#yad" class="nav-link font-medium border-x-0 border-t-0 border-b-2 border-transparent px-4 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent <?php count($hari_ini) == 0 and print('active')?>" data-bs-toggle="pill" data-bs-target="#yad" role="tab"
+      <li class="nav-item flex-grow text-center" role="presentation"><a href="#yad" class="nav-link font-medium border-x-0 border-t-0 border-b-2 border-transparent px-4 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent" data-bs-toggle="pill" data-bs-target="#yad" role="tab"
       aria-controls="yad">Yang akan datang</a></li>
       <?php endif; ?>
       <?php if (count($lama) >= 0): ?>
-      <li class="nav-item flex-grow text-center" role="presentation"><a href="#lama" class="nav-link font-medium border-x-0 border-t-0 border-b-2 border-transparent px-4 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent <?php count(array_merge($hari_ini, $yad)) == 0 and print('active')?>" data-bs-toggle="pill" data-bs-target="#lama" role="tab"
+      <li class="nav-item flex-grow text-center" role="presentation"><a href="#lama" class="nav-link font-medium border-x-0 border-t-0 border-b-2 border-transparent px-4 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent" data-bs-toggle="pill" data-bs-target="#lama" role="tab"
       aria-controls="lama">Lama</a></li>
       <?php endif; ?>
     </ul>
 
-    <div class="tab-content content overflow-auto" style="max-height: 220px">
+    <div class="tab-content content overflow-auto" style="height: 170px">
       <?php if (count(array_merge($hari_ini, $yad, $lama)) > 0): ?>
-      <div id="hari-ini" class="tab-pane fade show active" role="tabpanel">
-        <?php foreach ($hari_ini as $agenda): ?>
-          <table class="w-full text-sm my-3">
-            <tr>
-              <td colspan="3"><a href="<?= site_url('artikel/'.buat_slug($agenda))?>"><?= $agenda['judul']?></a></td>
-            </tr>
-            <tr>
-              <th id="label-meta-agenda" width="40%">Waktu</th>
-              <td width="5%">:</td>
-              <td id="isi-meta-agenda" width="55%"><?= tgl_indo2($agenda['tgl_agenda'])?></td>
-            </tr>
-            <tr>
-              <th id="label-meta-agenda">Lokasi</th>
-              <td>:</td>
-              <td id="isi-meta-agenda"><?= $agenda['lokasi_kegiatan']?></td>
-            </tr>
-            <tr>
-              <th id="label-meta-agenda">Koordinator</th>
-              <td>:</td>
-              <td id="isi-meta-agenda"><?= $agenda['koordinator_kegiatan']?></td>
-            </tr>
-          </table>
-        <?php endforeach; ?>
-      </div>
+        <div id="hari-ini" class="tab-pane fade show active h-full" role="tabpanel">
+          <?php if (count($hari_ini) > 0): ?>
+            <?php foreach ($hari_ini as $agenda): ?>
+              <table class="w-full text-sm mb-4">
+                <tr>
+                  <td colspan="3"><a href="<?= site_url('artikel/'.buat_slug($agenda))?>"><?= $agenda['judul']?></a></td>
+                </tr>
+                <tr>
+                  <th id="label-meta-agenda" width="40%">Waktu</th>
+                  <td width="5%">:</td>
+                  <td id="isi-meta-agenda" width="55%"><?= tgl_indo2($agenda['tgl_agenda'])?></td>
+                </tr>
+                <tr>
+                  <th id="label-meta-agenda">Lokasi</th>
+                  <td>:</td>
+                  <td id="isi-meta-agenda"><?= $agenda['lokasi_kegiatan']?></td>
+                </tr>
+                <tr>
+                  <th id="label-meta-agenda">Koordinator</th>
+                  <td>:</td>
+                  <td id="isi-meta-agenda"><?= $agenda['koordinator_kegiatan']?></td>
+                </tr>
+              </table>
+            <?php endforeach; ?>
+          <?php else : ?>
+            <div class="flex items-center justify-center w-full h-full">
+              <p class="text-center">Belum ada agenda</p>
+            </div>
+          <?php endif; ?>
+        </div>
 
-      <div id="yad" class="tab-pane fade <?php count($hari_ini) == 0 and print('show active')?>" role="tabpanel">
-        <?php if (count($yad) > 0): ?>
-        <?php foreach ($yad as $agenda): ?>
-          <table class="w-full text-sm my-3">
-            <tr>
-              <td colspan="3"><a href="<?= site_url('artikel/'.buat_slug($agenda))?>"><?= $agenda['judul']?></a></td>
-            </tr>
-            <tr>
-              <th id="label-meta-agenda" width="40%">Waktu</th>
-              <td width="5%">:</td>
-              <td id="isi-meta-agenda" width="55%"><?= tgl_indo2($agenda['tgl_agenda'])?></td>
-            </tr>
-            <tr>
-              <th id="label-meta-agenda">Lokasi</th>
-              <td>:</td>
-              <td id="isi-meta-agenda"><?= $agenda['lokasi_kegiatan']?></td>
-            </tr>
-            <tr>
-              <th id="label-meta-agenda">Koordinator</th>
-              <td>:</td>
-              <td id="isi-meta-agenda"><?= $agenda['koordinator_kegiatan']?></td>
-            </tr>
-          </table>
-        <?php endforeach; ?>
-        <?php endif; ?>
-      </div>
+        <div id="yad" class="tab-pane fade h-full" role="tabpanel">
+          <?php if (count($yad) > 0): ?>
+            <?php foreach ($yad as $agenda): ?>
+              <table class="w-full text-sm mb-4">
+                <tr>
+                  <td colspan="3"><a href="<?= site_url('artikel/'.buat_slug($agenda))?>"><?= $agenda['judul']?></a></td>
+                </tr>
+                <tr>
+                  <th id="label-meta-agenda" width="40%">Waktu</th>
+                  <td width="5%">:</td>
+                  <td id="isi-meta-agenda" width="55%"><?= tgl_indo2($agenda['tgl_agenda'])?></td>
+                </tr>
+                <tr>
+                  <th id="label-meta-agenda">Lokasi</th>
+                  <td>:</td>
+                  <td id="isi-meta-agenda"><?= $agenda['lokasi_kegiatan']?></td>
+                </tr>
+                <tr>
+                  <th id="label-meta-agenda">Koordinator</th>
+                  <td>:</td>
+                  <td id="isi-meta-agenda"><?= $agenda['koordinator_kegiatan']?></td>
+                </tr>
+              </table>
+            <?php endforeach; ?>
+          <?php else : ?>
+            <div class="flex items-center justify-center w-full h-full">
+              <p class="text-center">Belum ada agenda</p>
+            </div>
+          <?php endif; ?>
+        </div>
 
-      <div id="lama" class="tab-pane fade <?php count(array_merge($hari_ini, $yad)) == 0 and print('show active')?>" role="tabpanel" style="height:100%">
-        
-          <?php foreach ($lama as $agenda): ?>
-            <table class="w-full text-sm my-3">
-              <tr>
-                <td colspan="3"><a href="<?= site_url('artikel/'.buat_slug($agenda))?>"><?= $agenda['judul']?></a>
-                </td>
-              </tr>
-              <tr>
-                <th id="label-meta-agenda" width="40%">Waktu</th>
-                <td width="5%">:</td>
-                <td id="isi-meta-agenda" width="55%"><?= tgl_indo2($agenda['tgl_agenda'])?></td>
-              </tr>
-              <tr>
-                <th id="label-meta-agenda">Lokasi</th>
-                <td>:</td>
-                <td id="isi-meta-agenda"><?= $agenda['lokasi_kegiatan']?></td>
-              </tr>
-              <tr>
-                <th id="label-meta-agenda">Koordinator</th>
-                <td>:</td>
-                <td id="isi-meta-agenda"><?= $agenda['koordinator_kegiatan']?></td>
-              </tr>
-            </table>
-          <?php endforeach; ?>
-        
-      </div>
-      <?php else: ?>
-      <p>Belum ada agenda</p>
+        <div id="lama" class="tab-pane fade h-full" role="tabpanel">
+          <?php if (count($lama) > 0): ?>
+            <?php foreach ($lama as $agenda): ?>
+              <table class="w-full text-sm mb-4">
+                <tr>
+                  <td colspan="3"><a href="<?= site_url('artikel/'.buat_slug($agenda))?>"><?= $agenda['judul']?></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th id="label-meta-agenda" width="40%">Waktu</th>
+                  <td width="5%">:</td>
+                  <td id="isi-meta-agenda" width="55%"><?= tgl_indo2($agenda['tgl_agenda'])?></td>
+                </tr>
+                <tr>
+                  <th id="label-meta-agenda">Lokasi</th>
+                  <td>:</td>
+                  <td id="isi-meta-agenda"><?= $agenda['lokasi_kegiatan']?></td>
+                </tr>
+                <tr>
+                  <th id="label-meta-agenda">Koordinator</th>
+                  <td>:</td>
+                  <td id="isi-meta-agenda"><?= $agenda['koordinator_kegiatan']?></td>
+                </tr>
+              </table>
+            <?php endforeach; ?>
+          <?php else : ?>
+            <div class="flex items-center justify-center w-full h-full">
+              <p class="text-center">Tidak ada agenda</p>
+            </div>
+          <?php endif; ?>
+        </div>
       <?php endif; ?>
     </div>
   </div>
