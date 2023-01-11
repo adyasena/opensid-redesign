@@ -21,6 +21,9 @@
       <?php $this->load->view($folder_themes .'/partials/sidebar') ?>
     </div>
   </div>
+  <div class="w-full">
+    <?php $this->load->view($folder_themes .'/partials/sidebar_bottom') ?>
+  </div>
 
   <?php $this->load->view($folder_themes .'/commons/footer') ?>
   <script src="<?= base_url("$this->theme_folder/$this->theme/assets/js/script.min.js?" . THEME_VERSION) ?>"></script>

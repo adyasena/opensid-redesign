@@ -23,6 +23,9 @@
         <?php $this->load->view($folder_themes .'/partials/sidebar') ?>
       </div>
     </div>
+    <div class="w-full">
+      <?php $this->load->view($folder_themes .'/partials/sidebar_bottom') ?>
+    </div>
 
     <?php $this->load->view($folder_themes .'/commons/footer') ?>
 
