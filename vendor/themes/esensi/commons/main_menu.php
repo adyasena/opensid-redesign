@@ -1,7 +1,7 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
 <nav class="bg-primary-100 text-white hidden lg:block" role="navigation">
-  <ul class="container">
+  <ul>
     <li class="inline-block">
       <a href="<?= site_url() ?>" class="inline-block py-3 px-4 hover:bg-primary-200"><i class="fa fa-home"></i></a>
     </li>

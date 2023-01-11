@@ -4533,9 +4533,6 @@ article .box>div:nth-child(2) .table-responsive table, article .box>div:nth-chil
 .h-0 {
   height: 0px;
 }
-.h-32 {
-  height: 8rem;
-}
 .h-auto {
   height: auto;
 }
@@ -4889,7 +4886,7 @@ article .box>div:nth-child(2) .table-responsive table, article .box>div:nth-chil
 }
 .bg-gray-100 {
   --tw-bg-opacity: 1;
-  background-color: #fefefe;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 .bg-white {
   --tw-bg-opacity: 1;
@@ -7250,9 +7247,6 @@ article .box>div:nth-child(2) .table-responsive table, article .box>div:nth-chil
   }
   .lg\:w-7\/12 {
     width: 58.333333%;
-  }
-  .lg\:w-40 {
-    width: 3rem;
   }
   .lg\:w-12 {
     width: 3rem;

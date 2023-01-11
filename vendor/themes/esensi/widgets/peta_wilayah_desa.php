@@ -8,55 +8,7 @@
   </div>
   <div class="box-body">
     <div id="map_wilayah" style="height:200px;"></div>
-    <button class="btn btn-accent btn-block mt-5"><a
-        href="https://www.openstreetmap.org/#map=15/<?=$data_config['lat']."/".$data_config['lng']?>"
-        style="color:#fff;" target="_blank">Buka Peta</a></button>
-        <button class="btn btn-accent btn-block mt-5" data-bs-toggle="modal" data-bs-target="#detail2">
-      Detail
-    </button>
-    <!-- Modal -->
-    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
-      id="detail2" tabindex="-1" aria-labelledby="detailLabel" aria-hidden="true">
-      <div class="modal-dialog relative w-auto pointer-events-none">
-        <div
-          class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
-          <div
-            class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
-            <h5 class="text-xl font-medium leading-normal text-gray-800" id="detailLabel">Detail
-              <?= ucwords($this->setting->sebutan_desa) ?></h5>
-            <button type="button"
-              class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
-              data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body relative p-4 content">
-            <table class="max-w-full text-xs lg:text-sm table-auto w-full">
-              <tbody>
-                <tr>
-                  <td><?=ucwords($this->setting->sebutan_desa)." "?></td>
-                  <td>:</td>
-                  <td><?=$desa['nama_desa']?></td>
-                </tr>
-                <tr>
-                  <td><?=ucwords($this->setting->sebutan_kecamatan)?></td>
-                  <td>:</td>
-                  <td><?=$desa['nama_kecamatan']?></td>
-                </tr>
-                <tr>
-                  <td><?=ucwords($this->setting->sebutan_kabupaten)?></td>
-                  <td>:</td>
-                  <td><?=$desa['nama_kabupaten']?></td>
-                </tr>
-                <tr>
-                  <td>Kodepos</td>
-                  <td>:</td>
-                  <td><?=$desa['kode_pos']?></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
+    <a href="https://www.openstreetmap.org/#map=15/<?=$data_config['lat']."/".$data_config['lng']?>" class="text-link">Buka peta</a>
   </div>
 </div>
 
