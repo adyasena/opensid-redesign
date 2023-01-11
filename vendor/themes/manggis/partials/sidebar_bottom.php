@@ -1,5 +1,5 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
-<div class="flex flex-row" style="justify-content:center;">
+<div class="sidebar flex flex-col lg:flex-row" style="justify-content:center;">
 <aside class=" sidebar flex lg:w-1/2" style="flex-wrap:wrap; justify-content:end;">
   <?php if ($w_cos): ?>
     <?php foreach($w_cos as $widget) : ?>
