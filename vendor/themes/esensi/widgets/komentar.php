@@ -5,7 +5,7 @@
     <h3 class="box-title"><i class="fa fa-comments mr-2 mr-1"></i><?= $judul_widget ?></h3>
   </div>
   <div class="box-body" style="height:100%">
-    <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2" direction="up" width="100%" height="100%" align="center">
+    <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2" direction="up" width="100%" height="85%" align="center">
       <ul class="divide-y">
         <?php foreach($komen As $data): ?>
         <li class="py-2 space-y-2">
