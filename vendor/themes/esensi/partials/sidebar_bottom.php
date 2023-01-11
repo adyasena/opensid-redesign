@@ -4,7 +4,7 @@
   <?php if ($w_cos): ?>
     <?php foreach($w_cos as $widget) : ?>
       <?php 
-        if($widget['isi'] == "arsip_artikel.php" || $widget['isi'] == "komentar.php") : 
+        if($widget["isi"] == "agenda.php" || $widget['isi'] == "komentar.php") : 
       ?>
       <?php
         $judul_widget = [
