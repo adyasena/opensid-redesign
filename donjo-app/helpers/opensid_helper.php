@@ -228,7 +228,7 @@ function gambar_desa($nama_file, $type = false, $file = false)
     }
 
     // type FALSE = logo, TRUE = kantor
-    $default = ($type) ? 'opensid_kantor.jpg' : 'opensid_logo.png';
+    $default = ($type) ? 'purworejo.jpg' : 'purworejo_logo.png';
 
     return $logo_desa = ($file ? APPPATH . '../' : base_url()) . "assets/files/logo/{$default}";
 }
