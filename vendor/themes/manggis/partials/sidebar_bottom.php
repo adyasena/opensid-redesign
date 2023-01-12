@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
-<aside class="sidebar flex" style="flex-wrap:wrap; justify-content:center; height: 300px">
+<aside class="sidebar flex md-wrap" style="justify-content:center;">
   <?php if ($w_cos): ?>
     <?php foreach($w_cos as $widget) : ?>
       <?php 
@@ -11,7 +11,7 @@
           'judul_widget' => str_replace('Desa', ucwords($this->setting->sebutan_desa), strip_tags($widget['judul']))
         ];
       ?>
-      <div class="shadow rounded-lg bg-white overflow-hidden lg:w-400 w-full" style="margin:10px; height:93%">
+      <div class="shadow rounded-lg bg-white overflow-hidden lg:w-400 lg:h-[300px] w-full" style="margin:10px;">
         <?php 
         $this->load->view("{$folder_themes}/widgets/{$widget['isi']}", $judul_widget) 
         ?>
@@ -21,7 +21,7 @@
   <?php endif ?>
 </aside>
 
-<aside class="sidebar flex" style="flex-wrap:wrap; justify-content:center;">
+<aside class="sidebar flex md-wrap" style="justify-content:center;">
   <?php if ($w_cos): ?>
     <?php foreach($w_cos as $widget) : ?>
       <?php 
@@ -32,7 +32,7 @@
           'judul_widget' => str_replace('Desa', ucwords($this->setting->sebutan_desa), strip_tags($widget['judul']))
         ];
       ?>
-      <div class="shadow rounded-lg bg-white overflow-hidden lg:w-400 lg:h-[350px] w-full" style="margin:10px;">
+      <div class="shadow rounded-lg bg-white overflow-hidden lg:w-400 w-full" style="margin:10px;">
         <?php 
         $this->load->view("{$folder_themes}/widgets/{$widget['isi']}", $judul_widget) 
         ?>
@@ -42,7 +42,7 @@
   <?php endif ?>
 </aside>
 
-<aside class="sidebar flex" style="flex-wrap:wrap; justify-content:center;">
+<aside class="sidebar flex md-wrap" style="justify-content:center;">
   <?php if ($w_cos): ?>
     <?php foreach($w_cos as $widget) : ?>
       <?php 
