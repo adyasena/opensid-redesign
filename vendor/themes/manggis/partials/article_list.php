@@ -8,7 +8,7 @@
 ?>
 
 <div class="max-w-full w-full pb-2 lg:pb-5 overflow-auto" style="border-bottom: 1px solid #ccc;">
-  <figure class="h-20 lg:h-32 w-1/3 float-left relative <?php $image === gambar_desa($desa['logo']) ?>" style="padding-right: 0.5rem;">
+  <figure class="h-20 lg:h-32 w-1/3 float-left relative <?php $image === gambar_desa($desa['logo']) ?>" style="padding-right: 1rem;">
     <img src="<?= $image ?>" style="position: relative; height: 100%; top: 0; left:0;" 
       alt="<?= $post['judul'] ?>" class="<?php $image !== gambar_desa($desa['logo']) and print('w-full object-cover object-center') ?> max-w-full mx-auto h-auto">
       <div class="text-xs lg:text-sm text-white p-1" style="lg:padding: 0.25rem; z-index:1000; background-color:#8a0090; position: absolute; opacity: 0.85; bottom:0; left:0;">
