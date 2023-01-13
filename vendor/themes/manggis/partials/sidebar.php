@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
-<aside class="space-y-5 sidebar">
+<aside class="space-y-5-b sidebar">
   <?php if ($w_cos): ?>
     <?php foreach($w_cos as $widget) : ?>
       <?php if ($widget['isi'] == "arsip_artikel.php" || $widget['isi'] == "menu_kategori.php" || $widget["isi"] == "statistik.php" || $widget["isi"] == "sinergi_program.php" || 
