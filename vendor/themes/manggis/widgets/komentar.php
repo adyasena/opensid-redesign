@@ -4,9 +4,8 @@
   <div class="box-header">
     <h3 class="box-title"><i class="fa fa-comments mr-2 mr-1"></i><?= $judul_widget ?></h3>
   </div>
-  <div class="box-body" style="height:100%">
-    <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2" direction="up" width="100%" height="85%" align="center">
-      <ul class="divide-y">
+  <div class="box-body" style="height: 100%">
+      <ul class="divide-y overflow-auto" style="height: 210px">
         <?php foreach($komen As $data): ?>
         <li class="py-2 space-y-2">
           <blockquote class="italic"> <?= potong_teks($data['komentar'], 50); ?></blockquote>... <a
@@ -16,6 +15,5 @@
         </li>
         <?php endforeach; ?>
       </ul>
-    </marquee>
   </div>
 </div>
