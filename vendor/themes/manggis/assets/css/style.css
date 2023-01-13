@@ -7189,6 +7189,11 @@ article .box>div:nth-child(2) .table-responsive table, article .box>div:nth-chil
     padding-right: 1rem;
   }
 }
+@media (max-width: 1023.9px) {
+  .mobile-wrap {
+    flex-wrap: wrap;
+  }
+}
 @media (min-width: 1024px) {
   .lg\:visible {
     visibility: visible;

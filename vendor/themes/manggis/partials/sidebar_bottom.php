@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
-<aside class="sidebar flex md-wrap" style="justify-content:center;">
+<aside class="sidebar flex mobile-wrap" style="justify-content:center;">
   <?php if ($w_cos): ?>
     <?php foreach($w_cos as $widget) : ?>
       <?php 
@@ -21,7 +21,7 @@
   <?php endif ?>
 </aside>
 
-<aside class="sidebar flex md-wrap" style="justify-content:center;">
+<aside class="sidebar flex mobile-wrap" style="justify-content:center;">
   <?php if ($w_cos): ?>
     <?php foreach($w_cos as $widget) : ?>
       <?php 
@@ -42,7 +42,7 @@
   <?php endif ?>
 </aside>
 
-<aside class="sidebar flex md-wrap" style="justify-content:center;">
+<aside class="sidebar flex mobile-wrap  " style="justify-content:center;">
   <?php if ($w_cos): ?>
     <?php foreach($w_cos as $widget) : ?>
       <?php 
