@@ -6,7 +6,6 @@
 <head>
   <?php $this->load->view($folder_themes . '/commons/meta') ?>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/2.0.1/mapbox-gl.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +19,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.1.1/highcharts-3d.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <?php $this->load->view('global/validasi_form', ['web_ui' => true]); ?>
+  <?php $this->load->view($folder_themes .'/commons/source_css') ?>
+  <?php $this->load->view($folder_themes .'/commons/source_js') ?>
   <style>
     .font-primary {
       font-family: 'Poppins', sans-serif;
@@ -35,15 +36,20 @@
     }
   </style>
 
+    <?php $this->load->view($folder_themes . '/commons/loading_screen') ?>
+    <?php $this->load->view($folder_themes .'/commons/header') ?>
+
   <main class="container w-full space-y-1 text-gray-600">
     <div class="page-title text-center">
       <h2 class="text-3xl font-bold text-bold my-0 pt-6 pb-2">Peta <?= NAMA_DESA ?></h2>
-      <a href="<?= site_url() ?>" class="inline-block" class="text-link hover:text-link">Kembali ke Beranda</a>
+      <a href="<?= site_url() ?>"  class=" btn btn-primary  mt-5">Kembali ke Beranda</a>
     </div>
     <br>
     <?php $this->load->view($halaman_peta); ?>
   </main>
   <?php $this->load->view('head_tags_front') ?>
+  <?php $this->load->view($folder_themes .'/commons/footer') ?>
+  <script src="<?= base_url("$this->theme_folder/$this->theme/assets/js/script.min.js?" . THEME_VERSION) ?>"></script>
 </body>
 
 </html>

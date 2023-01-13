@@ -27,7 +27,7 @@
   }
 </style>
 
-<form id="mainform_map" name="mainform_map" method="post">
+<form id="mainform_map" name="mainform_map" method="post" >
   <div class="row">
     <div class="col-md-12">
       <div id="map">
@@ -116,42 +116,6 @@
     </div>
   </div>
 </form>
-
-<div class="modal fade" id="modalKecil" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
-  <div class="modal-dialog modal-sm">
-    <div class='modal-content'>
-      <div class='modal-header'>
-        <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>
-        <h4 class='modal-title' id='myModalLabel'></h4>
-      </div>
-      <div class="fetched-data"></div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="modalSedang" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
-  <div class="modal-dialog">
-    <div class='modal-content'>
-      <div class='modal-header'>
-        <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>
-        <h4 class='modal-title' id='myModalLabel'></h4>
-      </div>
-      <div class="fetched-data"></div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="modalBesar" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
-  <div class="modal-dialog modal-lg">
-    <div class='modal-content'>
-      <div class='modal-header'>
-        <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>
-        <h4 class='modal-title' id='myModalLabel'><i class='fa fa-exclamation-triangle text-red'></i></h4>
-      </div>
-      <div class="fetched-data"></div>
-    </div>
-  </div>
-</div>
 
 <script>
   (function() {

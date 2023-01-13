@@ -1,8 +1,8 @@
 {
-    "name": "themes/esensi",
+    "name": "themes/manggis",
     "type": "library",
     "description": "Tema OpenSID",
-    "homepage": "https://github.com/OpenSID/tema-esensi",
+    "homepage": "https://github.com/OpenSID/tema-manggis",
     "license": "GPL-3.0-or-later",
     "keywords": [
       "Themes",
@@ -10,8 +10,8 @@
     ],
     "authors": [
       {
-        "name": "Diki Siswanto",
-        "email": "dickyachmady@gmail.com"
+        "name": "Rizky Junian N - Adya Sena Pamungkas",
+        "email": "dysn@gmail.com"
       }
   ]
 }

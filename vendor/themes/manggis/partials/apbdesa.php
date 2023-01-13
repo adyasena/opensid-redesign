@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-5 container px-3 lg:px-5">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-5 container p-3 lg:p-4">
   <?php foreach($data_widget as $subdata_name => $subdatas) : ?>
     <div class="shadow bg-white rounded-lg overflow-hidden">
       <h3 class="bg-primary-100 text-white px-5 py-3 text-h5"><?= ($subdatas['laporan'])?></h3>

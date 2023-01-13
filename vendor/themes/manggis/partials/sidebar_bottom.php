@@ -62,3 +62,6 @@
     <?php endforeach ?> 
   <?php endif ?>
 </aside>
+<div class="container">
+  <?php if($transparansi) $this->load->view($folder_themes .'/partials/apbdesa', $transparansi) ?>
+</div>

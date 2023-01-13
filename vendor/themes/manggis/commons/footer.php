@@ -1,8 +1,6 @@
 <?php  defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
-<div class="container">
-  <?php if($transparansi) $this->load->view($folder_themes .'/partials/apbdesa', $transparansi) ?>
-</div>
+
 
 <?php 
   $social_media = [
