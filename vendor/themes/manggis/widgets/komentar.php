@@ -7,7 +7,7 @@
   <div class="box-body" style="height: 100%">
       <ul class="divide-y overflow-auto" style="height: 210px">
         <?php foreach($komen As $data): ?>
-        <li class="py-2 space-y-2">
+        <li class="py-2 space-y-2" style="border-bottom: 1px solid #ccc;">
           <blockquote class="italic"> <?= potong_teks($data['komentar'], 50); ?></blockquote>... <a
             href="<?= site_url('artikel/' . buat_slug($data)); ?>" class="text-link">selengkapnya</a>
           <p class="text-xs lg:text-sm"><i class="fas fa-comment"></i> <?= $data['owner']?></p>
