@@ -4,7 +4,7 @@
   <div class="box-header">
     <h3 class="box-title"><a href="<?= site_url("first/statistik/4")?>"><i class="fa fa-chart-pie mr-2 mr-1"></i><?= $judul_widget ?></a></h3>
   </div>
-  <div class="box-body">
+  <div class="box-body font-primary">
     <script type="text/javascript">
       $(function ()
       {
@@ -16,6 +16,9 @@
           {
             chart:
             {
+              style: {
+                fontFamily: 'Poppins'
+              },
               renderTo: 'container_widget',
               plotBackgroundColor: null,
               plotBorderWidth: null,
@@ -51,7 +54,7 @@
             {
               series:
               {
-                colorByPoint: true
+                color: '#8a0090'
               },
               column:
               {
