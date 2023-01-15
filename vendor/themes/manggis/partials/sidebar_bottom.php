@@ -42,7 +42,7 @@
   <?php endif ?>
 </aside>
 
-<aside class="sidebar flex mobile-wrap  " style="justify-content:center;">
+<aside class="sidebar flex mobile-wrap" style="justify-content:center;">
   <?php if ($w_cos): ?>
     <?php foreach($w_cos as $widget) : ?>
       <?php 
@@ -62,6 +62,6 @@
     <?php endforeach ?> 
   <?php endif ?>
 </aside>
-<div class="container">
+<div class="">
   <?php if($transparansi) $this->load->view($folder_themes .'/partials/apbdesa', $transparansi) ?>
 </div>

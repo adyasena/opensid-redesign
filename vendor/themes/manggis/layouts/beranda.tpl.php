@@ -45,6 +45,6 @@
     <?php $this->load->view($folder_themes .'/partials/sidebar') ?>
   </div>
 </div>
-<div class="w-full">
+<div class="w-full container">
   <?php $this->load->view($folder_themes .'/partials/sidebar_bottom') ?>
 </div>
