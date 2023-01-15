@@ -6929,17 +6929,13 @@ article .box>div:nth-child(2) .table-responsive table, article .box>div:nth-chil
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
-.decoration-pink-500 {
-  -webkit-text-decoration-color: #ec4899;
-          text-decoration-color: #ec4899;
+.decoration-primary {
+  -webkit-text-decoration-color: var(--primary-base-color);
+          text-decoration-color: var(--primary-base-color);
 }
-.decoration-green-500 {
-  -webkit-text-decoration-color: #22c55e;
-          text-decoration-color: #22c55e;
-}
-.decoration-secondary-100 {
-  -webkit-text-decoration-color: var(--secondary-base-color);
-          text-decoration-color: var(--secondary-base-color);
+.decoration-accent {
+  -webkit-text-decoration-color: var(--accent-base-color);
+          text-decoration-color: var(--accent-base-color);
 }
 .decoration-2 {
   text-decoration-thickness: 2px;
@@ -6953,11 +6949,11 @@ article .box>div:nth-child(2) .table-responsive table, article .box>div:nth-chil
 .opacity-0 {
   opacity: 0;
 }
-.opacity-100 {
-  opacity: 1;
-}
 .opacity-50 {
   opacity: 0.5;
+}
+.opacity-100 {
+  opacity: 1;
 }
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
