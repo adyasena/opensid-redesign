@@ -21,7 +21,7 @@
           'judul_widget' => str_replace('Desa', ucwords($this->setting->sebutan_desa), strip_tags($widget['judul']))
         ];
       ?>
-        <div class="shadow rounded-lg bg-white overflow-hidden" >
+        <div class="shadow rounded-lg bg-white overflow-hidden" style="margin-bottom:1.25rem;">
           <?php if ($widget["jenis_widget"] == 1): ?>
             <?php $this->load->view("{$folder_themes}/widgets/{$widget['isi']}", $judul_widget) ?>
           <?php elseif($widget['jenis_widget'] == 2) : ?>
