@@ -54,7 +54,7 @@
             {
               series:
               {
-                color: '#8a0090'
+                color: '#b0c736'
               },
               column:
               {
