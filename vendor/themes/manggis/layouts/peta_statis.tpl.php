@@ -42,7 +42,6 @@
   <main class="container w-full space-y-1 text-gray-600">
     <div class="page-title text-center">
       <h2 class="text-3xl font-bold text-bold my-0 pt-6 pb-2">Peta <?= NAMA_DESA ?></h2>
-      <a href="<?= site_url() ?>"  class=" btn btn-primary  mt-5">Kembali ke Beranda</a>
     </div>
     <br>
     <?php $this->load->view($halaman_peta); ?>
