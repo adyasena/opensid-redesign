@@ -7083,6 +7083,14 @@ article .box>div:nth-child(2) .table-responsive table, article .box>div:nth-chil
 .hover\:text-link:hover {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+  -webkit-text-decoration-color: var(--secondary-base-color);
+          text-decoration-color: var(--secondary-base-color);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+.hover\:text-link-accent:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   -webkit-text-decoration-color: var(--accent-base-color);
           text-decoration-color: var(--accent-base-color);
   text-decoration-thickness: 2px;
