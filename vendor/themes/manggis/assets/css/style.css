@@ -7237,7 +7237,7 @@ article .box>div:nth-child(2) .table-responsive table, article .box>div:nth-chil
     justify-content: center;
   }
   .mobile-mt-2 {
-    margin-top:-10px;
+    margin-top:-2rem;
   }
 }
 @media (max-width: 687.9px) {
