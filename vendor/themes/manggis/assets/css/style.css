@@ -4571,6 +4571,9 @@ article .box>div:nth-child(2) .table-responsive table, article .box>div:nth-chil
 .h-80 {
   height: 20rem;
 }
+.h-88 {
+  height: 22rem;
+}
 .h-44 {
   height: 11rem;
 }
@@ -7233,6 +7236,11 @@ article .box>div:nth-child(2) .table-responsive table, article .box>div:nth-chil
   .mobile-center {
     justify-content: center;
   }
+  .mobile-mt-2 {
+    margin-top:-2rem;
+  }
+}
+@media (max-width: 687.9px) {
   .mobile-gap {
     gap: 1.25rem;
   }
