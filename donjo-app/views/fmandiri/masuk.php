@@ -18,8 +18,8 @@
 	<link rel="stylesheet" href="<?= asset('bootstrap/css/bootstrap.bar.css') ?>" media="screen">
 	<!-- bootstrap datetimepicker -->
 	<link rel="stylesheet" href="<?= asset('bootstrap/css/bootstrap-datetimepicker.min.css') ?>">
-	<?php if (is_file('desa/pengaturan/siteman/siteman_mandiri.css')) : ?>
-		<link rel='Stylesheet' href="<?= base_url('desa/pengaturan/siteman/siteman_mandiri.css') ?>">
+	<?php if (is_file('donjo-app/siteman/siteman_mandiri.css')) : ?>
+		<link rel='Stylesheet' href="<?= base_url('donjo-app/siteman/siteman_mandiri.css') ?>">
 	<?php endif; ?>
 	<link rel="stylesheet" href="<?= asset('css/mandiri_video.css') ?>">
 	<!-- Font Awesome -->
