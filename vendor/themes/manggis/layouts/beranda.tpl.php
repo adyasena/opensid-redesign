@@ -14,8 +14,8 @@
   }
 ?>
 
-<div class="container mx-auto flex flex-col lg:flex-row mt-5 gap-5 items-center justify-center text-center text-gray-600" style="">
-  <div class="flex flex-row lg:gap-5">
+<div class="container mx-auto flex flex-row mobile-wrap mt-5 mobile-gap lg:gap-5 items-center justify-center text-center text-gray-600">
+  <div class="flex flex-row gap-2 lg:gap-5">
     <a href="<?= site_url('layanan-mandiri') ?>" class="lg:mx-10 mx-5 lg:w-40 w-32 flex flex-col items-center">
       <img src="<?= $layananmandiri ?>" alt="Layanan Mandiri" class="lg:w-20 w-20">
       <p>Layanan Mandiri</p>
@@ -25,7 +25,7 @@
       <p>Statistik Penduduk</p>
     </a>
   </div>
-  <div class="flex flex-row lg:gap-5">
+  <div class="flex flex-row gap-2 lg:gap-5">
     <a href="<?= site_url('first/peta') ?>" class="lg:mx-10 mx-5 lg:w-40 w-32 flex flex-col items-center">
       <img src="<?= $peta ?>" alt="Peta Desa" class="lg:w-20 w-20">
       <p>Peta Desa</p>
@@ -37,7 +37,7 @@
   </div>
 </div>
 
-<div class="container mx-auto flex flex-col lg:flex-row my-5 px-4 gap-3 lg:gap-5 justify-between text-gray-600" style="margin-bottom:0px">
+<div class="container mx-auto flex flex-col lg:flex-row mt-5 px-4 gap-3 lg:gap-5 justify-between text-gray-600">
   <main class="lg:w-2/3 w-full overflow-hidden space-y-4">
     <!-- Tampilkan slider hanya di halaman awal. Tidak tampil pada daftar artikel di halaman kategori atau halaman selanjutnya serta halaman hasil pencarian -->
     <?php if(empty($cari AND count($slider_gambar) > 0) AND $this->uri->segment(2) != 'kategori' AND ($this->uri->segment(2) !== 'index' AND $this->uri->segment(1) !== 'index')) : ?>
@@ -70,11 +70,11 @@
   </main>
 
   <!-- Bagian sidebar / widget -->
-  <div class="lg:w-1/3 w-full" style="">
+  <div class="lg:w-1/3 w-full">
     <?php $this->load->view($folder_themes .'/partials/sidebar') ?>
   </div>
 </div>
 
-<div class="w-full container" style="margin-top:-10px;">
+<div class="w-full container mobile-mt-2">
   <?php $this->load->view($folder_themes .'/partials/sidebar_bottom') ?>
 </div>
