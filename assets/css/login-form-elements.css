@@ -43,6 +43,7 @@ input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-i
 textarea::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeholder { color: #888; }
 button.btn {
 	height: 50px;
+    width: 50%;
     margin: 0;
     padding: 0 20px;
     vertical-align: middle;
@@ -53,7 +54,7 @@ button.btn {
     font-weight: 300;
     line-height: 50px;
     color: #fff;
-    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+    -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px;
     text-shadow: none;
     -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
     -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
