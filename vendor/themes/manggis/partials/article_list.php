@@ -16,15 +16,15 @@
     <img src="<?= $image ?>" style="position: relative; height: 100%; top: 0; left:0;" 
       alt="<?= $post['judul'] ?>" class="<?php $image !== gambar_desa($desa['logo']) and print('w-full object-cover object-center') ?> max-w-full mx-auto h-auto">
       <div class="text-xs lg:text-sm text-white p-1" style="lg:padding: 0.25rem; z-index:1000; background-color:#8a0090; position: absolute; opacity: 0.85; bottom:0; left:0;">
-      <?php echo $date ?> </div>
-</a>
+        <?php echo $date ?> 
+      </div>
+  </a>
   <a href="<?= $url ?>" class="text-h5 text-primary-200 hover:text-primary-100 my-2"><?= $post['judul'] ?></a>
   <div class="flex flex-col">
-  <p class="line-clamp-4" style="margin-bottom: 4px; -webkit-line-clamp: 3;"><?= $abstract ?></p>
-  <a href="<?= $url ?>" class="text-md text-primary-200 hover:text-primary-100">
-    Lihat Selengkapnya
-  <i class="fas fa-chevron-right ml-1"></i>
-  </a>
+    <p class="line-clamp-4" style="margin-bottom: 4px; -webkit-line-clamp: 3;"><?= $abstract ?></p>
+    <a href="<?= $url ?>" class="text-md text-primary-200 hover:text-primary-100">
+      Lihat Selengkapnya
+      <i class="fas fa-chevron-right ml-1"></i>
+    </a>
   </div>
-  
 </div>
