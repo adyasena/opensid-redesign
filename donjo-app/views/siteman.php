@@ -25,12 +25,11 @@
 		<script src="<?= asset('js/localization/messages_id.js') ?>"></script>
 		<?php require __DIR__ . '/head_tags.php' ?>
 	</head>
-	<body class="login">
-		<div class="top-content">
-			<div class="inner-bg">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-4 col-sm-offset-4 form-box">
+	<body class="login" style="height: 100vh; align-items:center; display:flex; justify-content:center;">
+		
+				<div class="container" style="display:flex;">
+					
+						<div class=" form-box mobile">
 							<div class="form-top">
 								<a href="<?=site_url() ?>"><img src="<?=gambar_desa($header['logo']) ?>" alt="<?=$header['nama_desa']?>" class="img-responsive" /></a>
 								<div class="login-footer-top"><h1><?=ucwords($this->setting->sebutan_desa)?> <?=$header['nama_desa']?></h1>
@@ -45,7 +44,7 @@
 									</div>
 								<?php endif ?>
 							</div>
-							<div class="form-bottom">
+							<div class="form-top">
 								<form id="validasi" class="login-form" action="<?= $form_action ?>" method="post" >
 									<?php if ($this->session->siteman_wait == 1): ?>
 										<div class="error login-footer-top">
@@ -85,10 +84,9 @@
 								<div class="login-footer-bottom"><a href="https://github.com/OpenSID/OpenSID" target="_blank">OpenSID</a> <?= AmbilVersi() ?></div>
 							</div>
 						</div>
-					</div>
+					
 				</div>
-			</div>
-		</div>
+
 
 		<script>
 			function start_countdown() {
