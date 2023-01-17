@@ -75,6 +75,6 @@
   </div>
 </div>
 
-<div class="w-full container mobile-mt-2">
+<div class="w-full container mobile-mt-2 mt-5">
   <?php $this->load->view($folder_themes .'/partials/sidebar_bottom') ?>
 </div>
