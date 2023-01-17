@@ -14,7 +14,7 @@
   }
 ?>
 
-<div class="container mx-auto flex flex-col lg:flex-row mt-5 gap-5 items-center justify-center text-center text-gray-600">
+<div class="container mx-auto flex flex-col lg:flex-row mt-5 gap-5 items-center justify-center text-center text-gray-600" style="">
   <div class="flex flex-row lg:gap-5">
     <a href="<?= site_url('layanan-mandiri') ?>" class="lg:mx-10 mx-5 lg:w-40 w-32 flex flex-col items-center">
       <img src="<?= $layananmandiri ?>" alt="Layanan Mandiri" class="lg:w-20 w-20">
@@ -37,7 +37,7 @@
   </div>
 </div>
 
-<div class="container mx-auto flex flex-col lg:flex-row my-5 px-4 gap-3 lg:gap-5 justify-between text-gray-600">
+<div class="container mx-auto flex flex-col lg:flex-row my-5 px-4 gap-3 lg:gap-5 justify-between text-gray-600" style="margin-bottom:0px">
   <main class="lg:w-2/3 w-full overflow-hidden space-y-4">
     <!-- Tampilkan slider hanya di halaman awal. Tidak tampil pada daftar artikel di halaman kategori atau halaman selanjutnya serta halaman hasil pencarian -->
     <?php if(empty($cari AND count($slider_gambar) > 0) AND $this->uri->segment(2) != 'kategori' AND ($this->uri->segment(2) !== 'index' AND $this->uri->segment(1) !== 'index')) : ?>
@@ -70,11 +70,11 @@
   </main>
 
   <!-- Bagian sidebar / widget -->
-  <div class="lg:w-1/3 w-full">
+  <div class="lg:w-1/3 w-full" style="">
     <?php $this->load->view($folder_themes .'/partials/sidebar') ?>
   </div>
 </div>
 
-<div class="w-full container">
+<div class="w-full container" style="margin-top:-10px;">
   <?php $this->load->view($folder_themes .'/partials/sidebar_bottom') ?>
 </div>
