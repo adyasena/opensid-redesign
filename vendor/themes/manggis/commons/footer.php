@@ -45,7 +45,8 @@
   <div class="bg-neutral-800 text-white py-5 px-5 rounded-t-xl text-sm flex flex-col gap-3 lg:flex-row justify-between items-center text-center lg:text-left">
     <span class="space-y-2">
       <p>Hak cipta situs &copy; <?= date('Y') ?> - <?= NAMA_DESA ?></p>
-      <p><a href="https://www.trivusi.web.id" class="underline decoration-primary underline-offset-1 decoration-2" target="_blank" rel="noopener">Manggis v1.0</a> - <a href="https://opensid.my.id" class="underline decoration-accent underline-offset-1 decoration-2" target="_blank" rel="noopener">OpenSID <?= ambilVersi() ?></a>
+      <p><a href="https://www.trivusi.web.id" class="underline decoration-primary underline-offset-1 decoration-2" target="_blank" rel="noopener">Manggis v1.0</a> - <a href="https://opensid.my.id" class="underline decoration-accent underline-offset-1 decoration-2" target="_blank" rel="noopener">OpenSID <?= ambilVersi() ?></a> - 
+      <a href="<?= site_url('siteman') ?>" class="underline decoration-primary underline-offset-1 decoration-2">Login Admin <i class="fas fa-external-link-alt ml-1"></i></a>
       </p>
     </span>
     <ul class="space-x-1">
